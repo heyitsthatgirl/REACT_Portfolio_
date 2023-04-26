@@ -1,10 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import Container from "./components/Container";
 
-function App() {
-  //use state statement
-  // useEffect to establish document title
-  // fetch the projects from github?
-  // return statement that renders everything
-}
+const App = () => <Container />;
 
 export default App;

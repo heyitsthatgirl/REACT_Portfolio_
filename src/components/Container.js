@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Home from "./Home";
+import Home from "./pages/Home";
 import Navigation from "./Navigation";
-import About from "./About";
-import Contact from "./Contact";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Header from "./Header";
-import Projects from "./Projects";
+import Projects from "./pages/Projects";
 import Footer from "./Footer";
 
 // state is initially set to 'Home'

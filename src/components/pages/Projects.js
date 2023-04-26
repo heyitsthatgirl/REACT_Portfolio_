@@ -1,10 +1,10 @@
 import React from "react";
 
-const Projects = ({ projects }) => {
+const Projects = () => {
   return (
     <div>
       <ul>
-        <li>{projects.one}</li>
+        <li>Project One</li>
       </ul>
     </div>
   );

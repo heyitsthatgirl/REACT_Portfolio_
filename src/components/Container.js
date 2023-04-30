@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import Home from "./pages/Home";
-import Navigation from "./Navigation";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Header from "./Header";
+import Navigation from "./Navigation";
 import Projects from "./pages/Projects";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 // state is initially set to 'Home'
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
 
-  // TODO: Add a comment describing the functionality of this method
   // returning a component based on what the current state is
   const renderPage = () => {
     if (currentPage === "Home") {
@@ -29,16 +28,17 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div id="container">
       <Header />
-      {/*the currentPage variable and the handlePageChange function*/}
       <Navigation
         currentPage={currentPage}
         handlePageChange={handlePageChange}
       />
-      {/* calling the renderPage function and returning a component based on the state of the page */}
-      {renderPage()}
-      <Footer />
+
+      <div id="main">
+        {/* calling the renderPage function and returning a component based on the state of the page */}
+        {renderPage()}
+      </div>
     </div>
   );
 }

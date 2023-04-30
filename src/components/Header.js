@@ -1,14 +1,12 @@
 import React from "react";
-import Navigation from "./Navigation";
+import lightning from "../assets/lightning.jpg";
 
-const Header = ({ header }) => {
+const Header = () => {
   return (
-    <div>
+    <header>
       <h1>Hope Mansfield</h1>
-      <div>
-        <Navigation />
-      </div>
-    </div>
+      <img src={lightning} alt="" id="lightning"></img>
+    </header>
   );
 };
 

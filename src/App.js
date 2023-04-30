@@ -1,6 +1,13 @@
 import React from "react";
 import Container from "./components/Container";
+import Footer from "./components/Footer";
 
-const App = () => <Container />;
+import "./styles.css";
+const App = () => (
+  <div>
+    <Container />
+    <Footer />
+  </div>
+);
 
 export default App;

@@ -1,11 +1,21 @@
 import React, { useState } from "react";
-import Home from "./pages/Home";
+import Resume from "./pages/Resume";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Projects from "./pages/Projects";
-// import Footer from "./Footer";
+import Footer from "./Footer";
+
+const styles = {
+  main: {
+    width: "100%",
+    paddingTop: "290px",
+    paddingLeft: "10%",
+    paddingRight: "10%",
+    paddingBottom: "75px",
+  },
+};
 
 // state is initially set to 'Home'
 export default function PortfolioContainer() {
@@ -13,14 +23,14 @@ export default function PortfolioContainer() {
 
   // returning a component based on what the current state is
   const renderPage = () => {
-    if (currentPage === "Home") {
-      return <Home />;
-    }
     if (currentPage === "About") {
       return <About />;
     }
     if (currentPage === "Projects") {
       return <Projects />;
+    }
+    if (currentPage === "Resume") {
+      return <Resume />;
     }
     return <Contact />;
   };
@@ -28,17 +38,14 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div id="container">
+    <div>
       <Header />
       <Navigation
         currentPage={currentPage}
         handlePageChange={handlePageChange}
       />
-
-      <div id="main">
-        {/* calling the renderPage function and returning a component based on the state of the page */}
-        {renderPage()}
-      </div>
+      <div style={styles.main}>{renderPage()}</div>
+      <Footer />
     </div>
   );
 }

@@ -6,6 +6,8 @@ import readme from "../../assets/readme.png";
 import tracker from "../../assets/tracker.png";
 import ecommerce from "../../assets/ecommerce.png";
 import kermie from "../../assets/tenor-138761250.gif";
+import ecommerceGIF from "../../assets/ecommerce.gif";
+import trackerGIF from "../../assets/tracker.gif";
 
 const styles = {
   section: {
@@ -25,6 +27,7 @@ const styles = {
     maxHeight: "200px",
     maxWidth: "300px",
     textAlign: "center",
+    borderRadius: "20px",
   },
 };
 
@@ -36,7 +39,6 @@ const Projects = () => {
         <div style={styles.project}>
           E-Commerce Back End
           <a
-            id="ecommerce"
             style={styles.project}
             href="https://github.com/heyitsthatgirl/E-Commerce-Back-End"
             rel="noreferrer"
@@ -44,7 +46,7 @@ const Projects = () => {
           >
             <img
               src={ecommerce}
-              onMouseOver={(e) => (e.currentTarget.src = kermie)}
+              onMouseOver={(e) => (e.currentTarget.src = ecommerceGIF)}
               onMouseOut={(e) => (e.currentTarget.src = ecommerce)}
               alt="icon"
               style={styles.img}
@@ -61,7 +63,7 @@ const Projects = () => {
           >
             <img
               src={tracker}
-              onMouseOver={(e) => (e.currentTarget.src = kermie)}
+              onMouseOver={(e) => (e.currentTarget.src = trackerGIF)}
               onMouseOut={(e) => (e.currentTarget.src = tracker)}
               alt="icon"
               style={styles.img}

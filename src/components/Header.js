@@ -1,24 +1,26 @@
 import React from "react";
-import lightning from "../assets/lightning.jpg";
+// import lightning from "../assets/lightning.jpg";
 
 const styles = {
   header: {
-    display: "block",
+    // display: "block",
     textAlign: "center",
     background: "linear-gradient(to bottom, #FFA69E 0%, #FAF3DD 100%)",
     padding: "20px",
-    position: "fixed",
-    top: "0",
-    width: "100%",
-    height: "155px",
+    // position: "fixed",
+    // top: "0",
+    width: "inherit",
+    // height: "155px",
+    height: "fit-content",
   },
-  lightning: {
-    position: "fixed",
-    top: "0",
-    marginLeft: "-125px",
-    opacity: "70%",
-    maxHeight: "125px",
-  },
+  // lightning: {
+  //   position: "absolute",
+  //   top: "0",
+  //   // marginLeft: "-125px",
+  //   // margin: "0px",
+  //   opacity: "70%",
+  //   maxHeight: "75px",
+  // },
   name: {
     fontSize: "50px",
     background: "transparent",
@@ -34,12 +36,14 @@ const styles = {
 
 const Header = () => {
   return (
-    <header style={styles.header}>
+    <header id="header" style={styles.header}>
+      {/* <img src={lightning} alt="" style={styles.lightning}></img> */}
       <h1 style={styles.name}>Hope Mansfield</h1>
       <p style={styles.p}>Web Developer</p>
-      <img src={lightning} alt="" style={styles.lightning}></img>
     </header>
   );
 };
 
 export default Header;
+
+// {/* <img src={lightning} alt="" style={styles.lightning}></img> */}

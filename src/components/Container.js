@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import Resume from "./pages/Resume";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Header from "./Header";
+// import Header from "./Header";
 import Navigation from "./Navigation";
 import Projects from "./pages/Projects";
 import Footer from "./Footer";
 
 const styles = {
   main: {
-    width: "100%",
-    paddingTop: "290px",
+    width: "100vw",
     paddingLeft: "10%",
     paddingRight: "10%",
     paddingBottom: "75px",
+    minHeight: "50vh",
   },
 };
 
@@ -39,7 +39,6 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      <Header />
       <Navigation
         currentPage={currentPage}
         handlePageChange={handlePageChange}

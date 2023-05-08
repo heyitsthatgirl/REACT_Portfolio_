@@ -1,22 +1,33 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
-export default function Contact() {
+function Contact() {
+  const [state, handleSubmit] = useForm("xpzebeyy");
+  if (state.succeeded) {
+    return <p>Hey, thanks for reaching out. Talk to you soon!</p>;
+  }
   return (
     <div>
       <h2>Contact Me</h2>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <div className="form-box">
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="email">Your Email Address</label>
+          <input id="email" type="email" name="email" />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <label htmlFor="message">Your Message</label>
+          <textarea id="message" name="message" />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+          <button type="submit" disabled={state.submitting}>
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
+
+export default Contact;

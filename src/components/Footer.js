@@ -2,11 +2,12 @@ import React from "react";
 
 const styles = {
   footer: {
-    background: "linear-gradient(to bottom, #c8bcda43 0%, #ffa69ef1 100%)",
+    // background: "linear-gradient(to bottom, #c8bcda43 0%, #ffa69ef1 100%)",
+    background: "transparent",
     textAlign: "center",
     height: "60px",
-    position: "fixed",
-    bottom: "0",
+    // position: "fixed",
+    // bottom: "0",
     width: "100%",
     marginTop: "auto",
   },

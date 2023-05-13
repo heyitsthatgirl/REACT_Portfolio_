@@ -5,10 +5,14 @@ import jsQuiz from "../../assets/quiz.png";
 import readme from "../../assets/readme.png";
 import tracker from "../../assets/tracker.png";
 import ecommerce from "../../assets/ecommerce.png";
-import kermie from "../../assets/tenor-138761250.gif";
 import ecommerceGIF from "../../assets/ecommerce.gif";
 import trackerGIF from "../../assets/tracker.gif";
+import coding_quizGIF from "../../assets/coding_quiz.gif";
+import weatherGIF from "../../assets/weather.gif";
+import readmeGIF from "../../assets/readme.gif";
+import teamGIF from "../../assets/team.gif";
 
+// styling for Project section
 const styles = {
   section: {
     display: "flex",
@@ -25,17 +29,55 @@ const styles = {
   },
   img: {
     maxHeight: "200px",
-    maxWidth: "300px",
+    maxWidth: "200px",
     textAlign: "center",
     borderRadius: "20px",
   },
+  subheader: {
+    textAlign: "center",
+  },
 };
 
+// function that returns Project section
 const Projects = () => {
   return (
     <div>
       <h2 style={styles.h2}>Projects</h2>
       <section style={styles.section}>
+        <div style={styles.project}>
+          Weather Dashboard
+          <a
+            style={styles.project}
+            href="https://github.com/heyitsthatgirl/Weather-Dashboard"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src={weather}
+              onMouseOver={(e) => (e.currentTarget.src = weatherGIF)}
+              onMouseOut={(e) => (e.currentTarget.src = weather)}
+              alt="icon"
+              style={styles.img}
+            ></img>
+          </a>
+        </div>
+        <div style={styles.project}>
+          Coding Quiz
+          <a
+            style={styles.project}
+            href="https://github.com/heyitsthatgirl/Coding-Quiz"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src={jsQuiz}
+              onMouseOver={(e) => (e.currentTarget.src = coding_quizGIF)}
+              onMouseOut={(e) => (e.currentTarget.src = jsQuiz)}
+              alt="icon"
+              style={styles.img}
+            ></img>
+          </a>
+        </div>
         <div style={styles.project}>
           E-Commerce Back End
           <a
@@ -80,7 +122,7 @@ const Projects = () => {
           >
             <img
               src={team}
-              onMouseOver={(e) => (e.currentTarget.src = kermie)}
+              onMouseOver={(e) => (e.currentTarget.src = teamGIF)}
               onMouseOut={(e) => (e.currentTarget.src = team)}
               alt="icon"
               style={styles.img}
@@ -97,42 +139,8 @@ const Projects = () => {
           >
             <img
               src={readme}
-              onMouseOver={(e) => (e.currentTarget.src = kermie)}
+              onMouseOver={(e) => (e.currentTarget.src = readmeGIF)}
               onMouseOut={(e) => (e.currentTarget.src = readme)}
-              alt="icon"
-              style={styles.img}
-            ></img>
-          </a>
-        </div>
-        <div style={styles.project}>
-          Weather Dashboard
-          <a
-            style={styles.project}
-            href="https://heyitsthatgirl.github.io/Weather-Dashboard/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src={weather}
-              onMouseOver={(e) => (e.currentTarget.src = kermie)}
-              onMouseOut={(e) => (e.currentTarget.src = weather)}
-              alt="icon"
-              style={styles.img}
-            ></img>
-          </a>
-        </div>
-        <div style={styles.project}>
-          Coding Quiz
-          <a
-            style={styles.project}
-            href="https://heyitsthatgirl.github.io/Coding-Quiz/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src={jsQuiz}
-              onMouseOver={(e) => (e.currentTarget.src = kermie)}
-              onMouseOut={(e) => (e.currentTarget.src = jsQuiz)}
               alt="icon"
               style={styles.img}
             ></img>

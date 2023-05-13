@@ -7,19 +7,23 @@ import Navigation from "./Navigation";
 import Projects from "./pages/Projects";
 import Footer from "./Footer";
 
+// main styling for container
 const styles = {
   main: {
     width: "100vw",
     paddingLeft: "10%",
     paddingRight: "10%",
     paddingBottom: "75px",
+    paddingTop: "35px",
     minHeight: "50vh",
+    borderTop: "dotted #ffa69e77 2vw",
   },
 };
 
+// function to return main section of page
 // state is initially set to 'Home'
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("About");
 
   // returning a component based on what the current state is
   const renderPage = () => {

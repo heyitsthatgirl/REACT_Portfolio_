@@ -1,6 +1,9 @@
 import React from "react";
 // import lightning from "../assets/lightning.jpg";
 
+// styling for Header
+// there was an image component I couldnt get quite right
+// something is affecting mobile view but I haven't mastered it yet
 const styles = {
   header: {
     // display: "block",
@@ -34,6 +37,7 @@ const styles = {
   },
 };
 
+// function to return header
 const Header = () => {
   return (
     <header id="header" style={styles.header}>

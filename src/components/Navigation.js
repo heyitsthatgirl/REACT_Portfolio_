@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "./Header";
+
+// styling for nav bar
 const styles = {
   nav: {
     display: "inline-flex",
@@ -23,8 +25,15 @@ const styles = {
     background: "transparent",
     textAlign: "center",
   },
+  navAnchorActive: {
+    textDecoration: "none",
+    background: "transparent",
+    textAlign: "center",
+    textShadow: "2px 2px #C8BCDA",
+  },
 };
 
+// function to return nav bar
 const Navigation = ({ currentPage, handlePageChange }) => {
   return (
     <div>
@@ -33,11 +42,13 @@ const Navigation = ({ currentPage, handlePageChange }) => {
         <ul>
           <li style={styles.navItem}>
             <a
-              style={styles.navAnchor}
               href="#about"
               onClick={() => handlePageChange("About")}
-              className={
-                currentPage === "About" ? "nav-link active" : "nav-link"
+              // ternary operator to change the styling based on which anchor is in use
+              style={
+                currentPage === "About"
+                  ? styles.navAnchorActive
+                  : styles.navAnchor
               }
             >
               About
@@ -45,11 +56,12 @@ const Navigation = ({ currentPage, handlePageChange }) => {
           </li>
           <li style={styles.navItem}>
             <a
-              style={styles.navAnchor}
               href="#projects"
               onClick={() => handlePageChange("Projects")}
-              className={
-                currentPage === "Projects" ? "nav-link active" : "nav-link"
+              style={
+                currentPage === "Projects"
+                  ? styles.navAnchorActive
+                  : styles.navAnchor
               }
             >
               Projects
@@ -57,13 +69,12 @@ const Navigation = ({ currentPage, handlePageChange }) => {
           </li>
           <li style={styles.navItem}>
             <a
-              style={styles.navAnchor}
               href="#resume"
               onClick={() => handlePageChange("Resume")}
-              // ternary operator that checks to see if the current page is "resume"
-              // if it is, we set the current page to 'lav-link-active, otherwise set it to 'nav-link'
-              className={
-                currentPage === "Resume" ? "nav-link active" : "nav-link"
+              style={
+                currentPage === "Resume"
+                  ? styles.navAnchorActive
+                  : styles.navAnchor
               }
             >
               Resume
@@ -71,11 +82,12 @@ const Navigation = ({ currentPage, handlePageChange }) => {
           </li>
           <li style={styles.navItem}>
             <a
-              style={styles.navAnchor}
               href="#contact"
               onClick={() => handlePageChange("Contact")}
-              className={
-                currentPage === "Contact" ? "nav-link active" : "nav-link"
+              style={
+                currentPage === "Contact"
+                  ? styles.navAnchorActive
+                  : styles.navAnchor
               }
             >
               Contact

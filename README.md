@@ -18,11 +18,11 @@ This project contains my personal portfolio - made with React! Users can read a 
 
 ---
 
-![Projects](../Assets/projects.gif)
+![Projects](./src/assets/projects.gif)
 
 ---
 
-![Contact Me](../Assets/contact-me.gif)
+![Contact Me](./src/assets/contact-me.gif)
 
 ---
 

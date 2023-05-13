@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/REACT_Portfolio_/static/css/main.39a4da3f.css",
+    "main.js": "/REACT_Portfolio_/static/js/main.05ae43bc.js",
+    "static/media/ecommerce.gif": "/REACT_Portfolio_/static/media/ecommerce.399e083340585e077fff.gif",
+    "static/media/tracker.gif": "/REACT_Portfolio_/static/media/tracker.7302ea230f815d9df984.gif",
+    "static/media/readme.gif": "/REACT_Portfolio_/static/media/readme.d9a919ad218816b727c2.gif",
+    "static/media/team.gif": "/REACT_Portfolio_/static/media/team.29640886e0269904f8b9.gif",
+    "static/media/weather.gif": "/REACT_Portfolio_/static/media/weather.d386e6012e39e8613ee7.gif",
+    "static/media/selfie.jpeg": "/REACT_Portfolio_/static/media/selfie.3d29d0918c918432ba4f.jpeg",
+    "static/media/coding_quiz.gif": "/REACT_Portfolio_/static/media/coding_quiz.8f0e2130bc038596bba0.gif",
+    "static/media/kermit.gif": "/REACT_Portfolio_/static/media/kermit.3a510ccc48b51db07ef4.gif",
+    "static/media/weather.png": "/REACT_Portfolio_/static/media/weather.61d49ae22261e86250e0.png",
+    "static/media/readme.png": "/REACT_Portfolio_/static/media/readme.70666194695a5c200b0a.png",
+    "static/media/tracker.png": "/REACT_Portfolio_/static/media/tracker.d974b9aba432741597de.png",
+    "static/media/ecommerce.png": "/REACT_Portfolio_/static/media/ecommerce.319f875df213e8714aac.png",
+    "static/media/team.png": "/REACT_Portfolio_/static/media/team.2bdfc65f0a8e59572fdf.png",
+    "static/media/quiz.png": "/REACT_Portfolio_/static/media/quiz.07e7f50efc111f3552ff.png",
+    "static/media/coffeecup.png": "/REACT_Portfolio_/static/media/coffeecup.9f6d4ca57f05aca98366.png",
+    "static/media/lightning.jpg": "/REACT_Portfolio_/static/media/lightning.68b9ee25648bc6a6018d.jpg",
+    "static/media/github-mark.svg": "/REACT_Portfolio_/static/media/github-mark.6fa18895f6e6c7772cab7049f7e05f59.svg",
+    "index.html": "/REACT_Portfolio_/index.html",
+    "main.39a4da3f.css.map": "/REACT_Portfolio_/static/css/main.39a4da3f.css.map",
+    "main.05ae43bc.js.map": "/REACT_Portfolio_/static/js/main.05ae43bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39a4da3f.css",
+    "static/js/main.05ae43bc.js"
+  ]
+}

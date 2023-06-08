@@ -29,8 +29,8 @@ export default function About() {
     <div style={styles.div}>
       <h2>About Me</h2>
       <p style={styles.p}>
-        I am an aspiring web developer currently enrolled in the fullstack
-        coding bootcamp at UNC Chapel Hill. My motivation for learning how to
+        I am a budding web developer and recent graduate of the Full-Stack
+        Coding Bootcamp at UNC Chapel Hill. My motivation for learning how to
         code stems from my love for the creative arts, and my penchant for
         computational thinking. My personal goal is to cultivate a lifestyle
         that allows me to utilize both of these skills on a daily basis.
